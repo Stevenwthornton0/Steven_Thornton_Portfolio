@@ -3,18 +3,18 @@
 }
 
 body {
-  font-family: "Open Sans",
-  sans-serif; 
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  color: #444;
+  color: white;
   text-align: center;
   line-height: 1.5;
+  margin: 0 0 0 0;
 }
 
 nav,
 footer {
   padding: 1% 0;
-  background-color: #aaa;
+  background-color: #FF6900;
   display: block;
 }
 
@@ -24,16 +24,121 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
+  text-align: left;
+  padding: 6px;
+  font-size: 24px;
+  text-transform: uppercase;  
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+nav > p {
+  margin: 0;
+  width: 69%;
+}
+
+nav > p:hover, nav > p:focus {
+  color: #FF6900;
+  cursor: pointer;
+}
+
+.hamburger {
+  background: none;
+  border: 1px solid black;
+  font-size: 20px;
+  border-radius: 3px;
+  color: white;
+  width: 40px;
+  margin-top: 5px;
+  position: absolute;
+  top: 0;
+  right: 4px;
+}
+
+.hamburger:hover, .hamburger:focus {
+  cursor: pointer;
+  background-color: black;
+  outline: 0;
 }
 
 header {
-  padding: 12% 0;
+  display: block;
+  background: url('./Images/the-piano-017.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-color: black;
+  border-bottom: 10px solid black;
+  height: 160px;
+  width: 100%;
 }
 
-section {
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+.container > a {
+  text-decoration: none;
+  color: rgb(53, 53, 53);
+  padding: 5px;
+}
+
+a:hover, a:focus {
+  color: #FF6900;
+}
+
+
+.bio {
   min-height: 200px;
   padding: 6% 0;
-  background-color: #bbb;
+  background-color: #ffffff;
+  color: rgb(53, 53, 53);
+}
+
+.bioContainer {
+  width: 86%;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.bioContainer > p:first-of-type {
+  padding-bottom: 25px;
+}
+
+.bioContainer > p:nth-of-type(2) {
+  font-size: 16px;
+  display: block;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.languageIcons {
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.languageIcons > p {
+  height: 50px;
+  margin: 0;
+  padding-top: 3px;
+}
+
+.languageIcons > img {
+  box-sizing: content-box;
+  width: 40px;
+  height: 40px;
+  padding-left: 30px;
 }
 
 .projects {
