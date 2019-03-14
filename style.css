@@ -18,6 +18,10 @@ footer {
   display: block;
 }
 
+.largerNav {
+  display: none;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -34,22 +38,23 @@ nav {
 
 nav > p {
   margin: 0;
-  width: 69%;
+  display: inline;
 }
 
 nav > p:hover, nav > p:focus {
-  color: #FF6900;
+  color: black;
   cursor: pointer;
+  transition: .1s ease-in;
 }
 
 .hamburger {
   background: none;
-  border: 1px solid black;
+  border: none;
   font-size: 20px;
   border-radius: 3px;
-  color: white;
+  color: black;
   width: 40px;
-  margin-top: 5px;
+  margin-top: 8px;
   position: absolute;
   top: 0;
   right: 4px;
@@ -57,8 +62,9 @@ nav > p:hover, nav > p:focus {
 
 .hamburger:hover, .hamburger:focus {
   cursor: pointer;
-  background-color: black;
+  color: white;
   outline: 0;
+  transition: .1s ease-in;
 }
 
 header {
@@ -139,6 +145,54 @@ a:hover, a:focus {
   width: 40px;
   height: 40px;
   padding-left: 30px;
+}
+
+.contactIcons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3px 0px;
+}
+
+.contactIcons a, .contactIcons img {
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (min-width: 500px) {
+  .hamburger {
+    display: none;
+  }
+
+  nav > p {
+    padding-left: 10px
+  }
+
+  .largerNav {
+    width: 38%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .largerNav > a {
+    margin: 0;
+    line-height: 34px;
+    text-decoration: none;
+    color: white;
+    outline: none;
+  }
+
+  .largerNav > a:hover, .largerNav > a:focus {
+  color: black;
+  cursor: pointer;
+  transition: .1s ease-in;
+  font-weight: 300;
+  }
+
 }
 
 .projects {
