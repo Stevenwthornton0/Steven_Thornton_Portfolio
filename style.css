@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -36,15 +37,16 @@ nav {
   letter-spacing: 3px;
 }
 
-nav > p {
+nav > a {
   margin: 0;
   display: inline;
+  color: white;
+  text-decoration: none;
 }
 
-nav > p:hover, nav > p:focus {
-  color: black;
+nav > a:hover, nav > a:focus {
   cursor: pointer;
-  transition: .1s ease-in;
+  color: white;
 }
 
 .hamburger {
@@ -52,7 +54,7 @@ nav > p:hover, nav > p:focus {
   border: none;
   font-size: 20px;
   border-radius: 3px;
-  color: black;
+  color: white;
   width: 40px;
   margin-top: 8px;
   position: absolute;
@@ -62,29 +64,75 @@ nav > p:hover, nav > p:focus {
 
 .hamburger:hover, .hamburger:focus {
   cursor: pointer;
+  outline: 0;  
+}
+
+.topNav {
+  display: none;
+}
+
+.topNav.responsive {
+  display: block;
   color: white;
-  outline: 0;
-  transition: .1s ease-in;
+  background-color: rgb(255, 106, 0);
+  position: absolute;
+  width: 100%;
+  margin-top: 6px;
+  left: 0;
+}
+
+.topNav.responsive ul {
+  list-style: none;
+  text-align: center;
+  border-top: 1px solid black;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #FF6900;
+}
+
+.topNav.responsive li {
+  display: block;
+  line-height: 50px;
+  border-bottom: 1px solid black;
+  border-left: none;
+  border-right: none;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.topNav.responsive a {
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+.topNav.responsive li:hover, .topNav.responsive li:focus {
+  background-color: rgb(255, 135, 49);
+  cursor: pointer;
 }
 
 header {
   display: block;
-  background: url('./Images/the-piano-017.png');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url('./Images/the-piano-017.jpg');
+  background-repeat: repeat;
+  background-size: contain;
   background-position: bottom;
   background-color: black;
-  border-bottom: 10px solid black;
-  height: 160px;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+  height: 80px;
   width: 100%;
+  margin-top: 48px;
 }
+
 
 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -97,7 +145,7 @@ header {
   padding: 5px;
 }
 
-a:hover, a:focus {
+a:hover {
   color: #FF6900;
 }
 
@@ -114,10 +162,12 @@ a:hover, a:focus {
   font-weight: 400;
   font-size: 20px;
   margin: 0 auto;
+  line-height: 25px;
 }
 
 .bioContainer > p:first-of-type {
   padding-bottom: 25px;
+  font-weight: 500;
 }
 
 .bioContainer > p:nth-of-type(2) {
@@ -127,11 +177,13 @@ a:hover, a:focus {
   padding-bottom: 10px;
 }
 
+.bioContainer .aboutMe {
+  display: none;
+}
+
 .languageIcons {
   display: flex;
   flex-direction: row;
-
-
 }
 
 .languageIcons > p {
@@ -150,59 +202,168 @@ a:hover, a:focus {
 .contactIcons {
   display: flex;
   justify-content: space-evenly;
-  padding: 3px 0px;
+  padding: 7px 0px;
 }
 
 .contactIcons a, .contactIcons img {
-  width: 25px;
-  height: 25px;
+  width: 27px;
+  height: 27px;
 }
 
-@media screen and (min-width: 500px) {
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 500px) { 
+  .bio {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .hamburger {
+    margin-right: 3px;
+    margin-top: 10px;
+  }
+  
+  nav > a {
+    padding-left: 10px;
+    font-size: 27px;
+  }
+
+  .topNav.responsive {
+    width: 50%;
+    left: initial;
+    right: 0;
+    border-left: 1px solid black;
+  }
+
+  header {
+    background-size: contain;
+    background-repeat: repeat;
+    border-bottom: 5px solid black; 
+    margin-top: 52px;
+    height: 85px;
+  }
+
+  .container {
+    font-size: 18px;
+  }
+
+  .bioContainer > p:first-of-type {
+    font-size: 23px;
+    padding-bottom: 10px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 860px) {
+  nav > p {
+    padding-left: 15px
+  }
+  
   .hamburger {
     display: none;
   }
 
-  nav > p {
-    padding-left: 10px
+  .topNav .navAboutMe {
+    display: none;
+  }
+  
+  .topNav {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
-  .largerNav {
-    width: 38%;
-    float: right;
+  .topNav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    color: white;
-    font-size: 18px;
-    font-weight: 100;
+    justify-content: flex-end;
+    background-color: inherit;
+    margin: 0px;
+    line-height: 52px;
   }
 
-  .largerNav > a {
-    margin: 0;
-    line-height: 34px;
+  .topNav li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 0 30px;
+  }
+
+  .topNav a {
     text-decoration: none;
     color: white;
-    outline: none;
   }
 
-  .largerNav > a:hover, .largerNav > a:focus {
-  color: black;
-  cursor: pointer;
-  transition: .1s ease-in;
-  font-weight: 300;
+  .topNav li:hover {
+    background-color: rgb(255, 135, 49);
+    cursor: pointer;
+    transition: .1s ease-in;
   }
 
+  .bio {
+    padding: 3% 10%;
+  }
+
+  .container {
+    font-size: 18px;
+    padding-bottom: 0px;
+  }
+
+  .bioContainer p:nth-of-type(1) {
+    line-height: 40px;
+    font-size: 32px;
+  }
+
+  .bioContainer p:nth-of-type(2) {
+    padding-bottom: 0;
+  }
+
+  .bioContainer .aboutMe {
+    display: block;
+    font-size: 16px;
+    text-align: left;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+
+  .languageIcons > p:nth-of-type(1) {
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .contactIcons {
+    padding: 1px 0;
+  }
+
+  .contactIcons a, .contactIcons img {
+    width: 25px;
+    height: 25px;
+  }
+  
 }
 
-.projects {
-  display: none;
-}
 
-.contact {
-  display: none;
-}
 
-.aboutMe {
-  display: none;
-}
+
+
+
+
+

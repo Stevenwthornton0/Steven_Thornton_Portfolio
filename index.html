@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <title>Steven Thornton Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   
   <body>
     <nav role='navigation'>
-      <p>Steven Thornton</p>
-      <div class='largerNav'>
-        <a href="./aboutMe.html">About Me</a>
-        <a href="./projects.html">Projects</a>
-        <a href="./contactMe.html">Contact</a>
-      </div>
+      <a href="./index.html">Steven Thornton</a>
       <button class='hamburger'>&#9776</button>
+      <div class='topNav' id='myTopNav'>
+          <ul>
+            <a href="./index.html"><li>Home</li></a>
+            <a class='navAboutMe' href="./aboutMe.html"><li>About Me</li></a>
+            <a href="./projects.html"><li>Projects</li></a>
+            <a href="./contactMe.html"><li>Contact</li></a>
+          </ul>
+        </div>
     </nav>
+
     <main>
       <header role='banner'>
       </header>
@@ -30,18 +34,19 @@
         </div>
 
         <div class='bioContainer'>
-          <p>Hello, I’m Steven! I’m a full-stack web developer and a I absolutely love creating websites.</p>
+          <p>Hello, I’m Steven! I’m a full-stack web developer and I absolutely love creating websites</p>
 
-          <p>I am a recent graduate from the Full-Stack Flex bootcamp at Thinkful. To me, coding is like a puzzle. You take the pieces that have been given you, put them together in a unique, fun, and satisfying way, and you create something not only useful but extremely useful for the consumer. I especially love the front-end side of development. Designing a beautiful, user-friendly, and responsive webpage gives me such a satisfying feeling and makes me feel like I could solve any problem or puzzle thrown at me.</p>
+          <p>I am a recent graduate from the Full-Stack Flex bootcamp at Thinkful. To me, coding is like a puzzle. You take the pieces that have been given you, put them together in a unique, fun, and satisfying way, and you create something not only beautiful but extremely useful for the consumer. I especially love the front-end side of development. Designing a beautiful, user-friendly, and responsive webpage gives me such a satisfying feeling and makes me feel like I could solve any problem or puzzle thrown at me.</p>
+
+          <p class='aboutMe'>When I’m not coding you can find me serving at my local church, on the golf course attempting to shave off a few strokes, fishing, playing piano, or on the couch with my wife watching a movie. I love to learn and grow, taking everything I do to the next level including my skill in code. I bring excitement and dedication in anything I put my hands to. My lifelong dream is to raise a family with my wife and see our kids have children of their own.</p>
+
 
           <div class='languageIcons'>
             <p>Languages: </p>
             <img src="./Images/html5-plain.svg" alt="HTML5 Logo">
             <img src="./Images/css3-plain.svg" alt="CSS Logo">
             <img src="./Images/javascript-plain.svg" alt="JavaScript Logo">
-            
           </div>
-          
         </div>
       </section>
 
@@ -53,6 +58,9 @@
         </div>
       </footer>
     </main>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='script.js'></script>
   </body>
 
 </html>
