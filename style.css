@@ -210,6 +210,57 @@ a:hover {
   height: 27px;
 }
 
+.weddingPhoto1 img {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 2px solid rgb(173, 172, 172);
+  border-radius: 3px;
+}
+
+.weddingPhoto2 img {
+  width: 85%;
+  border: 2px solid rgb(173, 172, 172);
+  border-radius: 3px;
+  margin-top: 15px;
+}
+
+.projectsTitle {
+  color: rgb(53, 53, 53);
+  font-weight: 400;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  text-decoration: underline;
+}
+
+.golfQuizApp {
+  color: rgb(53, 53, 53);
+  margin-bottom: 30px;
+}
+
+.golfQuizApp img {
+  width: 85%;
+  border: 2px solid rgb(173, 172, 172);
+  border-radius: 2px;
+}
+
+.golfQuizApp p {
+  margin: 0 auto;
+  text-align: left;
+  width: 85%
+}
+
+.golfQuizApp p:nth-of-type(2) {
+  font-size: 12px;
+}
+
+.golfQuizApp a {
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(53, 53, 53);
+}
+
+
 
 
 
@@ -261,6 +312,10 @@ a:hover {
     padding-bottom: 10px;
   }
 
+  .projectsTitle {
+    font-size: 28px;
+  }
+
 }
 
 
@@ -272,15 +327,13 @@ a:hover {
 
 
 @media screen and (min-width: 860px) {
-  nav > p {
-    padding-left: 15px
+
+  nav > a:hover {
+    color: rgb(53, 53, 53);
+    transition: .1s ease-in;
   }
   
   .hamburger {
-    display: none;
-  }
-
-  .topNav .navAboutMe {
     display: none;
   }
   
@@ -327,6 +380,10 @@ a:hover {
     padding-bottom: 0px;
   }
 
+  .bioContainer {
+    padding: 0px 40px;
+  }
+
   .bioContainer p:nth-of-type(1) {
     line-height: 40px;
     font-size: 32px;
@@ -351,13 +408,42 @@ a:hover {
 
   .contactIcons {
     padding: 1px 0;
+    justify-content: space-evenly;
   }
 
   .contactIcons a, .contactIcons img {
     width: 25px;
     height: 25px;
   }
-  
+
+  .weddingPhoto2 img {
+    width: 78%
+  }
+
+  .projectsTitle {
+    font-size: 30px;
+  }
+
+  .projects {
+    width: 80%;
+    margin: auto auto;
+  }
+
+  .projects p {
+    font-size: 22px;
+  }
+
+  .projects p:nth-of-type(2) {
+    font-size: 14px;
+  }
+
+  .projects a {
+    font-size: 17px;
+  }
+
+  .projects a:hover {
+    color: #FF6900;
+  }
 }
 
 

@@ -26,28 +26,21 @@
       <header role='banner'>
       </header>
 
-      <section class='bio'>
-        <div class='container'>
-          <a href="https://virtualpiano.net/" target='_blank'>Piano Player</a>
-          <a href="https://www.nps.gov/mora/index.htm" target='_blank'>Nature Lover</a>
-          <a href="https://www.thinkful.com/" target='_blank'>Thinkful Grad</a>
-        </div>
-
-        <div class='bioContainer'>
-          <p>Hello, I’m Steven! I’m a full-stack web developer and I absolutely love creating websites</p>
-
-          <p>I am a recent graduate from the Full-Stack Flex bootcamp at Thinkful. To me, coding is like a puzzle. You take the pieces that have been given you, put them together in a unique, fun, and satisfying way, and you create something not only beautiful but extremely useful for the consumer. I especially love the front-end side of development. Designing a beautiful, user-friendly, and responsive webpage gives me such a satisfying feeling and makes me feel like I could solve any problem or puzzle thrown at me.</p>
-
-          <p class='aboutMe'>When I’m not coding you can find me serving at my local church, on the golf course attempting to shave off a few strokes, fishing, playing piano, or on the couch with my wife watching a movie. I love to learn and grow, taking everything I do to the next level including my skill in code. I bring excitement and dedication in anything I put my hands to. My lifelong dream is to raise a family with my wife and see our kids have children of their own.</p>
-
-
-          <div class='languageIcons'>
-            <p>Languages: </p>
-            <img src="./Images/html5-plain.svg" alt="HTML5 Logo">
-            <img src="./Images/css3-plain.svg" alt="CSS Logo">
-            <img src="./Images/javascript-plain.svg" alt="JavaScript Logo">
-          </div>
-        </div>
+      <section class='contactMe'>
+        <form action='mailto:stevenwthornton0@gmail.com' method='post' enctype="text/plain">
+          <fieldset>
+            <legend>Send me an email</legend>
+            <p>Name:</p>
+            <input type="text" name="name" id="name">
+            <p>Subject:</p>
+            <input type="text" name='emailAddress' id='emailAddress'>
+            <p>Content:</p>
+            <input type="text" name='content' id='content'><br>
+            <input type='submit' value='send'>
+            <input type='reset' value='reset'>
+          </fieldset>
+        
+        </form>
       </section>
 
       <footer role='contentinfo'>
