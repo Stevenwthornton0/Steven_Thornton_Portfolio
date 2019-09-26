@@ -233,28 +233,28 @@ a:hover {
   text-decoration: underline;
 }
 
-.golfQuizApp, .marvel_Character_Search {
+.golfQuizApp, .marvelCharacterSearch {
   color: rgb(53, 53, 53);
   margin-bottom: 30px;
 }
 
-.golfQuizApp img, .marvel_Character_Search img {
+.golfQuizApp img, .marvelCharacterSearch img {
   width: 85%;
   border: 2px solid rgb(173, 172, 172);
   border-radius: 2px;
 }
 
-.golfQuizApp p, .marvel_Character_Search p {
+.golfQuizApp p, .marvelCharacterSearch p {
   margin: 0 auto;
   text-align: left;
   width: 85%
 }
 
-.golfQuizApp p:nth-of-type(2), .marvel_Character_Search p:nth-of-type(2) {
+.golfQuizApp p:nth-of-type(2), .marvelCharacterSearch p:nth-of-type(2) {
   font-size: 12px;
 }
 
-.golfQuizApp a, .marvel_Character_Search a {
+.golfQuizApp a, .marvelCharacterSearch a {
   font-size: 15px;
   text-decoration: none;
   color: rgb(53, 53, 53);
