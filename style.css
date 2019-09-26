@@ -211,7 +211,7 @@ a:hover {
 }
 
 .weddingPhoto1 img {
-  width: 100%;
+  width: 60%;
   margin-bottom: 20px;
   border: 2px solid rgb(173, 172, 172);
   border-radius: 3px;
@@ -233,28 +233,28 @@ a:hover {
   text-decoration: underline;
 }
 
-.golfQuizApp {
+.golfQuizApp, .marvel_Character_Search {
   color: rgb(53, 53, 53);
   margin-bottom: 30px;
 }
 
-.golfQuizApp img {
+.golfQuizApp img, .marvel_Character_Search img {
   width: 85%;
   border: 2px solid rgb(173, 172, 172);
   border-radius: 2px;
 }
 
-.golfQuizApp p {
+.golfQuizApp p, .marvel_Character_Search p {
   margin: 0 auto;
   text-align: left;
   width: 85%
 }
 
-.golfQuizApp p:nth-of-type(2) {
+.golfQuizApp p:nth-of-type(2), .marvel_Character_Search p:nth-of-type(2) {
   font-size: 12px;
 }
 
-.golfQuizApp a {
+.golfQuizApp a, .marvel_Character_Search a {
   font-size: 15px;
   text-decoration: none;
   color: rgb(53, 53, 53);
