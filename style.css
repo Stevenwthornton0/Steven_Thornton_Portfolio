@@ -181,22 +181,18 @@ a:hover {
   display: none;
 }
 
-.languageIcons {
-  display: flex;
-  flex-direction: row;
-}
-
 .languageIcons > p {
   height: 50px;
   margin: 0;
+
   padding-top: 3px;
 }
 
 .languageIcons > img {
   box-sizing: content-box;
-  width: 25px;
-  height: 25px;
-  padding-left: 30px;
+  width: 35px;
+  height: 35px;
+  padding: 0px 15px;;
 }
 
 .contactIcons {
@@ -450,6 +446,11 @@ a:hover {
     width: 40px;
     height: 40px;
     padding-left: 30px;
+  }
+
+  .languageIcons {
+    display: flex;
+    flex-direction: row;
   }
   
 }
