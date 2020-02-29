@@ -188,13 +188,6 @@ a:hover {
   padding-top: 3px;
 }
 
-.languageIcons > img {
-  box-sizing: content-box;
-  width: 35px;
-  height: 35px;
-  padding: 0px 15px;;
-}
-
 .contactIcons {
   display: flex;
   justify-content: space-evenly;
@@ -229,33 +222,62 @@ a:hover {
   text-decoration: underline;
 }
 
-.golfQuizApp, .marvelCharacterSearch {
+.golfQuizApp, .marvelCharacterSearch, .servicepro-app, .brewbook-app {
   color: rgb(53, 53, 53);
   margin-bottom: 30px;
 }
 
-.golfQuizApp img, .marvelCharacterSearch img {
+.golfQuizApp img, .marvelCharacterSearch img, .servicepro-app img, .brewbook-app img {
   width: 85%;
   border: 2px solid rgb(173, 172, 172);
   border-radius: 2px;
 }
 
-.golfQuizApp p, .marvelCharacterSearch p {
+.golfQuizApp p, .marvelCharacterSearch p, .servicepro-app p, .brewbook-app p {
   margin: 0 auto;
   text-align: left;
   width: 85%
 }
 
-.golfQuizApp p:nth-of-type(2), .marvelCharacterSearch p:nth-of-type(2) {
+.golfQuizApp p:nth-of-type(2), .marvelCharacterSearch p:nth-of-type(2), .servicepro-app p:nth-of-type(2), .brewbook-app p:nth-of-type(2) {
   font-size: 12px;
 }
 
-.golfQuizApp a, .marvelCharacterSearch a {
+.golfQuizApp a, .marvelCharacterSearch a, .servicepro-app a, .brewbook-app a {
   font-size: 15px;
   text-decoration: none;
   color: rgb(53, 53, 53);
 }
 
+.languageIcons > img {
+  box-sizing: content-box;
+  width: 35px;
+  height: 35px;
+  padding: 0px 15px;
+  border: none;
+}
+
+.techIcons {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin-left: 7.5%;
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+
+.techIcons > img {
+  box-sizing: content-box;
+  width: 30px;
+  height: 30px;
+  padding: 0px 10px;
+  border: none;
+}
+
+.techIcons > p {
+  width: fit-content;
+  font-size: 12px;
+}
 
 
 
@@ -269,6 +291,12 @@ a:hover {
 
 
 @media screen and (min-width: 500px) { 
+  .techIcons > img {
+    width: 35px;
+    height: 35px;
+    padding: 0px 15px;
+  }
+
   .bio {
     padding-left: 40px;
     padding-right: 40px;
@@ -327,10 +355,6 @@ a:hover {
   nav > a:hover {
     color: rgb(53, 53, 53);
     transition: .1s ease-in;
-  }
-  
-  .hamburger {
-    display: none;
   }
   
   .topNav {
@@ -451,6 +475,14 @@ a:hover {
   .languageIcons {
     display: flex;
     flex-direction: row;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .hide { 
+    display: none;
   }
   
 }
